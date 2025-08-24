@@ -105,11 +105,6 @@ python LOL/pretrain/clip_ids_check3.py
 python extract_feature/extract_pretrain_query_features.py
 ```
 
-### 4) JSONL Score 包裝（將 score 外層多套一層 list）
-```bash
-python LOL/pretrain/jsonfix.py
-```
-
 ---
 
 
