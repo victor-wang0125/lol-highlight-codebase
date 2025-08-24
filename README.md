@@ -14,3 +14,11 @@
 ```bash
 conda activate video_lights
 export PYTHONPATH=$PYTHONPATH:/mnt/c/code/VideoLights
+
+## 🎥 特徵提取 (Feature Extraction)
+
+在訓練與推論前，需要先將影片與語句轉換為可供模型使用的特徵檔。
+
+### 1. 收集影片路徑
+```bash
+python extract_feature/slowfast/extract_feature/gather_video_paths.py
