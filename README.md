@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 ## 特徵提取 (Feature Extraction)
 
-### 1) SlowFast 視覺特徵
+### (1) SlowFast 視覺特徵
 ```bash
 # 產生影片路徑列表
 python extract_feature/slowfast/extract_feature/gather_video_paths.py
@@ -53,7 +53,7 @@ python extract_feature/slowfast/extract_feature/extract.py \
   TEST.CHECKPOINT_FILE_PATH /models/SLOWFAST_8x8_R50.pkl
 ```
 
-### 2) Query（文字/多模態）特徵
+### (2) Query（文字/多模態）特徵
 ```bash
 # 文字改寫 / 同義改寫（如使用 OpenAI 流程）
 python extract_feature/openai_paraphraser.py
@@ -82,12 +82,12 @@ bash video_lights/scripts/qvhl/train.sh
 
 ## 合成資料生成 (Synthetic Data Generation )
 
-### 1) 官方 BLIP JSONL 生成
+### (1) 官方 BLIP JSONL 生成
 ```bash
 python extract_feature/pretrain_data_generator_using_blip2.py
 ```
 
-### 2) Gemini JSONL 生成
+### (2) Gemini JSONL 生成
 ```bash
 python LOL/pretrain/create_gemini_jsonl.py \
   --image_dir /mnt/e/coding/nkust_paper/2023_spring_LEC/W3D1_W3D3_frames \
@@ -100,7 +100,7 @@ python LOL/pretrain/jsonfix2.py
 python LOL/pretrain/clip_ids_check3.py
 ```
 
-### 3) Query 特徵生成（預訓練）
+### (3) Query 特徵生成（預訓練）
 ```bash
 python extract_feature/extract_pretrain_query_features.py
 ```
