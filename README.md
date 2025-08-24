@@ -17,10 +17,21 @@
 
 ---
 
-## 環境設定
+## 快速開始
+### 下載專案
 ```bash
-conda activate video_lights
-export PYTHONPATH=$PYTHONPATH:/mnt/c/code/VideoLights
+git clone https://github.com/victor-wang0125/lol-highlight-codebase.git
+cd lol-highlight-codebase
+```
+---
+
+
+### 環境設定
+```bash
+conda create -n lol-highlight-codebase python=3.10 -y
+conda activate lol-highlight-codebase
+# 安裝套件
+pip install -r requirements.txt
 ```
 
 ---
